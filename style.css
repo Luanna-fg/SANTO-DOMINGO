@@ -1,0 +1,71 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body { background-color: #D9ABAB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+.ima1 {
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+}
+.ima1 img {
+  height: 300px;
+  margin: 50px
+}
+
+.titulo-centrado {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Efecto de texto */
+.efecto-texto {
+  animation: cambioColor 2s infinite, moverTexto 3s infinite;
+}
+
+@keyframes cambioColor {
+  0% { color: blue; }
+  50% { color: red; }
+  100% { color: blue; }
+}
+
+@keyframes moverTexto {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+.link {
+  text-align: center;
+  font-size: 2em;
+  margin: 10px 0;
+}
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espacio entre la imagen y el texto */
+}
+
+#imagen {
+  max-width: 300px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: auto;
+}
+
+#texto {
+  margin: 0;
+  text-align: center;
+}
+.texto {
+  text-align: center;
+  font-size: 2em;
+  color: #ff4242;
+  margin: 10px 0;
+}
